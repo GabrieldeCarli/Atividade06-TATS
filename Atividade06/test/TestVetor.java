@@ -44,4 +44,18 @@ public class TestVetor {
         assertEquals(5.1, maiores[1], 0.001);
         assertEquals(4.1, maiores[2], 0.001);
     }
+    
+    @Test
+    public void TestMenor() {
+        double a[] = {1.1, 2.1, 4.1, 5.1, 7.1, 6.1};
+        Vetores v = new Vetores();
+        int n;
+        n = 3;
+        double[] menores = new double[n];
+        menores = v.menorvetor(a, n);
+
+        assertEquals(1.1, menores[0], 0.001);
+        assertEquals(2.1, menores[1], 0.001);
+        assertEquals(4.1, menores[2], 0.001);
+    }
 }
